@@ -19,7 +19,9 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a class="user-navigation-basket" href="basket.html">Корзина</a></li>
+        <li>
+          <a class="user-navigation-basket" href="basket.html">Корзина</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -48,6 +50,33 @@
         </li>
       </ul>
     </section>
+    <section>
+  <p class="write-to-us-headline">Напишите нам
+  </p>
+  <form class="write-to-us-form" action="http://echo.htmlacademy.ru" method="post">
+    <p class="write-to-us-item">
+      <label for="write-to-us-name">Ваше имя:
+      </label>
+      <input id="write-to-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+    </p>
+    <p class="write-to-us-item">
+      <label for="write-to-us-mailing-address">
+        Ваш e-mail:
+      </label>
+      <input id="write-to-us-mailing-address" type="text" name="mailing address" value="" placeholder="email@example.com">
+    </p>
+    <p class="write-to-us-item">
+      <label for="write-to-us-text-correspondence">
+        Текст письма:
+      </label>
+      <input id="write-to-us-text-correspondence" type="text" name="text-correspondence" value="" placeholder="В свободной форме">
+    </p>
+  </form>
+  <button class="write-to-us-button" type="submit">Отправить
+  </button>
+  <button class="write-to-us-close" type="button">Закрыть
+  </button>
+</section>
   </main>
   <footer class="main-footer">
     <div class="footer-social">
