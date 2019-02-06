@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #a6a6a6;
+}
+
+.services-list {
+  list-style: none;
+}
+
+}
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.services-item-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: gray;
+}
+
+.services-item-button.website {
+  background-color: #fb565a;
+}
+.services-item-button.website:hover {
+  background-color: #e74246;
+}
+.services-item-button.app {
+  background-color: #00ca74;
+}
+.services-item-button.app:hover {
+  background-color: #00bc6c;
+}
+.services-item-button.presentation {
+  background-color: #efc84a;
+}
+.services-item-button.presentation:hover{
+  background-color: #eab534;
+}
+.write-to-us-form {
+  display: none.
+}
+
+.footer-text {
+  background-color: #ffffff;
+}
+
+.footer-text-main {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-text-discount {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+.filter-option {
+  list-style: none;
+}
+
+.site-navigation-current a {
+  border-bottom: 2px solid #fb565a;
+  }
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #000000;
+}
+
+legend {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.filter-option {
+  font-size: 16px;
+  line-height: 20px;
+  color: #61686c;
+  background-color: #ffffff;
+}
+
+.price-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
