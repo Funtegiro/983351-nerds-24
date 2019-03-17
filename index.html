@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия "nёrd's"</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="test-image" style="background-image: url('img/preview/nerds-index.jpg')"></div>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «nёrd's»">
       </a>
       <ul class="site-navigation">
@@ -31,35 +32,41 @@
   <main class="container">
     <h1 class="visually-hidden">Дизайн-студия "nёrd's"</h1>
     <section class="main-slider">
-      <div class="slider-list wrapper">
-        <div class="slider-item" style="display:none;">
+      <h2 class="visually-hidden"> Преимущества</h2>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="slider-controls">
+        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+      </div>
+      <ul class="slider-list wrapper">
+        <li class="slider-item">
           <div class="slider-info">
-            <p class="main-slider-title"> Долго, дорого,<br> скрупулезно.</p>
+            <p class="main-slider-title"> Долго, дорого, скрупулезно.</p>
             <p class="main-slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button main-slider-button" href="">Узнать больше</a>
           </div>
-          <img src="./img/slider/slide1.png" alt="Долго, дорого, скрупулезно.">
-        </div>
-        <div class="slider-item" style="display:none;">
+          <img src="./img/slider/slide1.png" width="698" height="413" alt="Долго, дорого, скрупулезно.">
+        </li>
+        <li class="slider-item">
           <div class="slider-info">
-            <p class="main-slider-title"> Любим математику<br> как никто другой</p>
-            <p class="main-slider-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+            <p class="main-slider-title"> Любим математику как никто другой</p>
+            <p class="main-slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button main-slider-button" href="">Узнать больше</a>
           </div>
-          <img src="./img/slider/slide2.png" alt="Любим математику как никто другой">
-        </div>
-        <div class="slider-item">
+          <img src="./img/slider/slide2.png" width="663" height="430" alt="Любим математику как никто другой">
+        </li>
+        <li class="slider-item">
           <div class="slider-info">
-            <p class="main-slider-title"> Только ночь,<br> только хардкор</p>
-            <p class="main-slider-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <p class="main-slider-title"> Только ночь, только хардкор</p>
+            <p class="main-slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button main-slider-button" href="">Узнать больше</a>
           </div>
-          <img src="./img/slider/slide3.png" alt="Только ночь, только хардкор">
-        </div>
-      </div>
-      <div class="slider-nav">
-        <!-- здесь должны будут быть переключатели слайдов -->
-      </div>
+          <img src="./img/slider/slide3.png" width="759" height="411" alt="Только ночь, только хардкор">
+        </li>
+      </ul>
     </section>
     <div class="wrapper">
       <section class="services">
@@ -86,6 +93,7 @@
         </ul>
       </section>
       <section class="statistics">
+        <h2 class="visually-hidden">Показатели</h2>
         <div class="statistics-about">
           <p class="statistics-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="statistics-title-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -96,11 +104,11 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="statistics-table">
+        <div class="statistics-block">
           <a class="statistics-logo" href="index.html">
             <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Лого статистика»">
           </a>
-          <table>
+          <table class="statistics-table">
             <caption class="statistics-table-title">с 2004 года Любим точность во всем:</caption>
             <tr class="statistics-table-percentage">
               <td>146<sup>%</sup></td>
@@ -116,56 +124,56 @@
         </div>
       </section>
       <section class="partners">
-        <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+        <h2 class="visually-hidden">Партнеры</h2>
+        <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/html-academy.png" width="199" height="68" alt="Html academy»">
         </a>
-        <a class="barbershop" href="#">
+        <a class="barbershop" href="#" target="_blank">
           <img src="img/barbershop.png" width="209" height="90" alt="Borodinskii»">
         </a>
-        <a class="pink" href="#">
+        <a class="pink" href="#" target="_blank">
           <img src="img/pink.png" width="185" height="52" alt="PINK»">
         </a>
-        <a class="mishka" href="#">
+        <a class="mishka" href="#" target="_blank">
           <img src="img/mishka.png" width="173" height="84" alt="MISHKA»">
         </a>
       </section>
     </div>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
+         allowfullscreen></iframe>
       <div class="wrapper contacts-wrapper">
         <div class="contacts-form">
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-          <address>191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8
-            тел. +7 (812) 275-75-75
-          </address>
-          <button class="button contacts-button" type="button">Напишите нам</button>
+          <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+          <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
+          <a class="button contacts-button">Напишите нам</a>
         </div>
         <div class="write-to-us">
-          <p class="write-to-us-headline">Напишите нам
-          </p>
+          <button class="write-to-us-close" type="button" aria-label="Close">Закрыть</button>
           <form class="write-to-us-form" action="http://echo.htmlacademy.ru" method="post">
+            <p class="write-to-us-headline">Напишите нам</p>
+            <div class="write-to-us-contacts">
+              <p class="write-to-us-item">
+                <label for="write-to-us-name">Ваше имя:
+                </label>
+                <input id="write-to-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p class="write-to-us-item">
+                <label for="write-to-us-email">
+                  Ваш e-mail:
+                </label>
+                <input id="write-to-us-email" type="email" name="email" value="" placeholder="email@example.com">
+              </p>
+            </div>
             <p class="write-to-us-item">
-              <label for="write-to-us-name">Ваше имя:
-              </label>
-              <input id="write-to-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </p>
-            <p class="write-to-us-item">
-              <label for="write-to-us-mailing-address">
-                Ваш e-mail:
-              </label>
-              <input id="write-to-us-mailing-address" type="text" name="mailing address" value="" placeholder="email@example.com">
-            </p>
-            <p class="write-to-us-item">
-              <label for="write-to-us-text-correspondence">
-                Текст письма:
-              </label>
-              <input id="write-to-us-text-correspondence" type="text" name="text-correspondence" value="" placeholder="В свободной форме">
+              <label for="write-to-us-text"> Текст письма: </label>
+              <textarea name="text" rows="4" id="write-to-us-text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button write-to-us-button" type="submit">Отправить
             </button>
           </form>
-          <button class="write-to-us-close" type="button">Закрыть
-          </button>
         </div>
       </div>
     </section>
@@ -193,6 +201,7 @@
       <p class="footer-text-discount">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
