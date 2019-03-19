@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -87,7 +87,8 @@ img {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: #a6a6a6;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .site-navigation {
@@ -133,13 +134,13 @@ img {
 }
 
 .user-navigation-basket::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   top: 2px;
   height: 15px;
   left: 0;
-  background-image: url(../img/cart-icon.svg);
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -187,6 +188,9 @@ img {
 }
 
 .services-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
   margin-top: 15px;
   margin-bottom: 30px;
   padding-right: 20px;
@@ -210,7 +214,7 @@ img {
 }
 
 .services-item-button.website:active {
-  color: #e1686b;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   -webkit-box-shadow: inset 0 3px 0 #c13135;
           box-shadow: inset 0 3px 0 #c13135;
@@ -229,7 +233,7 @@ img {
 }
 
 .services-item-button.app:active {
-  color: #4dc491;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
   -webkit-box-shadow: inset 0 3px 0 #009958;
           box-shadow: inset 0 3px 0 #009958;
@@ -248,7 +252,7 @@ img {
 }
 
 .services-item-button.presentation:active {
-  color: #ebba53;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
   -webkit-box-shadow: inset 0 3px 0 #ce961f;
           box-shadow: inset 0 3px 0 #ce961f;
@@ -275,7 +279,7 @@ img {
   width: 960px;
   margin-left: -480px;
   background-color: #ffffff;
-  padding: 80px;
+  padding: 66px 100px;
   -webkit-box-shadow: 0 15px 40px rgba(0, 1, 1, 0.75);
           box-shadow: 0 15px 40px rgba(0, 1, 1, 0.75);
   z-index: 500;
@@ -378,13 +382,13 @@ img {
   line-height: 18px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .write-to-us-close {
   position: absolute;
-  top: 78px;
-  right: 70px;
+  top: 77px;
+  right: 90px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -406,7 +410,7 @@ img {
 
 .write-to-us-close::before,
 .write-to-us-close::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 3px;
@@ -434,8 +438,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 35px;
+  margin-top: 41px;
 }
 
 .write-to-us-contacts .write-to-us-item {
@@ -448,17 +452,20 @@ img {
 .write-to-us-item input,
 .write-to-us-item textarea {
   width: 100%;
-  padding: 15px;
+  padding: 13px;
+  font-size: 16px;
+  line-height: 18px;
   border-width: 2px;
   border-style: solid;
   border-radius: 2px;
+
   color: #000000;
   border-color: #d7dcde;
   outline: none;
 }
 
 .write-to-us-item textarea {
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 
 .write-to-us-item input:hover,
@@ -545,6 +552,7 @@ img {
 
 /* Каталог */
 .site-navigation-current a {
+  color: #000000;
   border-bottom: 2px solid #fb565a;
 }
 
@@ -554,7 +562,7 @@ img {
   margin: 0;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
   text-align: center;
@@ -566,7 +574,7 @@ img {
   margin: 0;
   padding: 0 20px;
   width: 300px;
-  margin-top: 60px;
+  margin-top: 56px;
   min-height: 1990px;
 }
 
@@ -582,18 +590,20 @@ img {
   list-style: none;
   font-size: 16px;
   line-height: 20px;
-  color: #61686c;
+  color: #283136;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .filter fieldset {
   border: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .range-controls {
@@ -658,9 +668,10 @@ img {
 
 .price-controls input {
   width: 80px;
-  padding: 10px 8px;
-  margin-left: 10px;
+  padding: 8px 8px;
+  margin-left: 8px;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
   border: none;
@@ -673,15 +684,15 @@ img {
 }
 
 .filters-block:first-child {
-  margin-bottom: 57px;
+  margin-bottom: 54px;
 }
 
 .filter-name {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .filter-input:hover+label,
@@ -794,8 +805,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 42px;
-  margin-bottom: 40px;
+  margin-top: 41px;
+  margin-bottom: 36px;
 }
 
 .sorting a {
@@ -899,12 +910,13 @@ img {
   height: 50px;
   margin-right: 11px;
   margin-bottom: 11px;
-  line-height: 50px;
-  color: #000000;
-  background-color: #eeeeee;
+  padding: 17px;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
+  color: #000000;
   text-transform: uppercase;
+  background-color: #eeeeee;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -919,7 +931,7 @@ img {
 }
 
 .pagination-item a:active {
-  color: #bfbfbf;
+  color: rgba(0,0,0,0.3);
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0 3px 0 #bfbfbf;
           box-shadow: inset 0 3px 0 #bfbfbf;
@@ -996,7 +1008,7 @@ img {
 .main-slider-title {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 55px;
   font-weight: 500;
   color: #000000;
@@ -1005,6 +1017,9 @@ img {
 }
 
 .main-slider-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
   width: 370px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -1027,7 +1042,7 @@ img {
 }
 
 .main-slider-button:active {
-  color: #e37376;
+  color: rgba(255,255,255,0.3);
   background-color: #d7373b;
   -webkit-box-shadow: inset 0 3px 0 #c13135;
           box-shadow: inset 0 3px 0 #c13135;
@@ -1122,6 +1137,7 @@ img {
   text-align: left;
   padding-top: 75px;
   padding-bottom: 35px;
+  margin-right: auto;
 }
 
 .statistics-title-text,
@@ -1144,7 +1160,7 @@ img {
 .statistics-table-title {
   color: #000000;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -1174,7 +1190,7 @@ img {
 }
 
 .statistics-table-info {
-  color: #000000;
+  color: #283136;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -1213,6 +1229,8 @@ img {
   padding-top: 45px;
   padding-bottom: 40px;
   margin-bottom: 78px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -1230,7 +1248,7 @@ img {
 
 .partners a:not(:last-child)::after {
   display: block;
-  content: '';
+  content: "";
   background-color: #eeeeee;
   width: 2px;
   height: 50px;
@@ -1251,7 +1269,7 @@ img {
 .contacts {
   position: relative;
   min-width: 1200px;
-  background-image: url(../img/map.png);
+  background-image: url("../img/map.png");
   background-position: center;
   background-size: cover;
   z-index: 1500;
@@ -1315,7 +1333,7 @@ img {
 
 .contacts-tel a {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 .contacts-button {
@@ -1325,7 +1343,7 @@ img {
 .main-footer {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 65px;
+  padding-top: 70px;
   padding-bottom: 65px;
   margin: 0 auto;
   width: 1200px;
@@ -1441,10 +1459,10 @@ img {
 
 .catalog-item::before {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 40px;
-  background-image: url(../img/item-hat.png);
+  background-image: url("../img/item-hat.png");
   background-repeat: no-repeat;
   background-position: top left;
   opacity: 0.12;
@@ -1463,7 +1481,7 @@ img {
   background-color: #fb565a;
   width: 200px;
   margin-top: 30px;
-  margin-bottom: 44px;
+  margin-bottom: 41px;
 }
 
 .price-button:hover {
@@ -1478,19 +1496,24 @@ img {
 
 .catalog-category {
   display: block;
+  font-size: 18px;
+  line-height: 30px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .catalog-item-title {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   max-height: 260px;
-  overflow: hidden;
+  width: 240px;
+  overflow: auto;
 }
 
 .catalog-item-image {
@@ -1504,6 +1527,7 @@ img {
 }
 
 .write-to-us-button {
-  padding-left: 80px;
+  padding-left: 85px;
   padding-right: 80px;
+  margin-bottom: 15px;
 }

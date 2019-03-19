@@ -41,12 +41,12 @@
                 <div class="scale">
                   <div class="bar" style="margin-left: 0; width: 70%"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" aria-label="Стоимость От"></div>
+                <div class="toggle toggle-max" aria-label="Стоимость До"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
               </div>
             </div>
           </fieldset>
@@ -128,7 +128,7 @@
             <div class="catalog-item-info">
               <h3>
                 <a class="catalog-category" href="#">SEDONA</a>
-                <span class="catalog-item-title">Информационный сайт для туристов</span>
+                <span class="catalog-item-title">Информационный сайт для&nbsp;туристов</span>
               </h3>
               <a class="button price-button" href="#">9 900 РУБ.</a>
             </div>
@@ -152,7 +152,7 @@
             <div class="catalog-item-info">
               <h3>
                 <a class="catalog-category" href="#">BARBERSHOP</a>
-                <span class="catalog-item-title">Сайт салона красоты. Для мужчин, да.</span>
+                <span class="catalog-item-title">Сайт салона красоты. Для&nbsp;мужчин, да.</span>
               </h3>
               <a class="button price-button" href="#">9 900 РУБ.</a>
             </div>
@@ -164,7 +164,7 @@
             <div class="catalog-item-info">
               <h3>
                 <a class="catalog-category" href="#">MISHKA</a>
-                <span class="catalog-item-title">Интернет-магазин вязанных игрущек</span>
+                <span class="catalog-item-title">Интернет-магазин вязанных&nbsp;игрушек</span>
               </h3>
               <a class="button price-button" href="#">9 900 РУБ.</a>
             </div>
@@ -188,7 +188,7 @@
             <div class="catalog-item-info">
               <h3>
                 <a class="catalog-category" href="#">КВАСТ</a>
-                <span class="catalog-item-title">Промо-сайт производителя крафтового кваса</span>
+                <span class="catalog-item-title">Промо-сайт производителя крафтового&nbsp;кваса</span>
               </h3>
               <a class="button price-button" href="#">9 900 РУБ.</a>
             </div>
@@ -210,8 +210,10 @@
         <div class="contacts-form">
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
           <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-          <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-          <a class="button contacts-button">Напишите нам</a>
+          <p class="contacts-tel">тел.
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <a class="button contacts-button" href="contacts.html">Напишите нам</a>
         </div>
         <div class="write-to-us">
           <button class="write-to-us-close" type="button" aria-label="Close">Закрыть</button>
@@ -232,7 +234,7 @@
             </div>
             <p class="write-to-us-item">
               <label for="write-to-us-text"> Текст письма: </label>
-              <textarea name="text" rows="4" id="write-to-us-text" placeholder="В свободной форме"></textarea>
+              <textarea name="text" rows="5" id="write-to-us-text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button write-to-us-button" type="submit">Отправить
             </button>
